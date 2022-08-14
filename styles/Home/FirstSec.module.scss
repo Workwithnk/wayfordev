@@ -1,0 +1,25 @@
+@import "../mixins";
+@import "../variables";
+
+.FirstSec {
+  @include flexProperty;
+  flex-direction: column;
+  padding: 3% 0% 8% 0%;
+  .heading {
+    font-family: $MAIN_HEADING_HOME;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .btnCont {
+    margin-top: 3%;
+    .buttons {
+      border: 1px solid $BTN_BLACK;
+      &:nth-child(2n-1) {
+        color: $BTN_PRIMARY;
+      }
+      &:nth-child(2n) {
+        color: $BTN_BLACK;
+      }
+    }
+  }
+}

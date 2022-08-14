@@ -1,5 +1,9 @@
-import { Box } from "@mui/material";
+import FirstSec from "../Components/Home/FirstSec";
 
 export default function Home() {
-  return <Box>Home</Box>;
+  return (
+    <>
+      <FirstSec />
+    </>
+  );
 }
